@@ -1,0 +1,124 @@
+# Global & OS
+
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+Icon?
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.lock
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+
+
+# Backend (.NET / ASP.NET / EF Core)
+# Build folders
+
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Dotnet tools / cache
+.vs/
+.vscode/
+.nuget/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# EF Core Migrations snapshot cache
+**/Migrations/*Designer.cs
+
+# Logs
+logs/
+*.log
+*.tlog
+
+# Backup files
+*.bak
+*.orig
+
+# SQLite / local DB files
+*.db
+*.sqlite
+*.sqlite3
+
+# Frontend (Vite + React + Tailwind)
+
+# Dependencies
+
+frontend/node_modules/
+frontend/.npm/
+frontend/.pnpm-store/
+frontend/yarn.lock
+
+# Build artifacts
+frontend/dist/
+frontend/build/
+
+# Local dev server
+frontend/.vite/
+frontend/.vite-temp/
+
+# Debug / testing
+coverage/
+*.coverage
+*.lcov
+
+# Logs
+frontend/*.log
+
+# IDE / editor
+frontend/.vscode/
+frontend/.idea/
+
+
+# Docker & CI/CD
+# Ignore local build artifacts
+
+**/Dockerfile.*
+**/docker-compose.override.yml
+docker-compose.override.yml
+
+# Docker cache / volumes
+.docker/
+.dockerignore
+*~docker-compose*
+*.env.docker
+**/tmp/
+**/cache/
+
+
+# Miscellaneous
+# Local tools / configs
+
+*.local
+*.secret
+*.key
+*.pem
+*.crt
+*.pfx
+
+# Temporary uploads / runtime folders
+uploads/
+temp/
+tmp/
+.cache/
+.cache-loader/
+/docker-compose.yaml
