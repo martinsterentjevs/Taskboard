@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
-using Taskboard.API.Models;
 using Taskboard.API.Data;
+using Taskboard.API.Models.Auth;
 
 namespace Taskboard.API.Services
 {
@@ -12,6 +12,7 @@ namespace Taskboard.API.Services
         {
             _db = db;
         }
+
 
         internal object GetUserByIdentifier(string userid)
         {

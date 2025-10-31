@@ -1,7 +1,12 @@
-﻿namespace Taskboard.API.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Taskboard.API.Models.Auth
 {
     public class User
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public required string Username { get; set; }
         public required string Full_Name { get; set; } 

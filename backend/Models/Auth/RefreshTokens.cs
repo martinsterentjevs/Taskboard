@@ -1,4 +1,4 @@
-﻿namespace Taskboard.API.Models
+﻿namespace Taskboard.API.Models.Auth
 {
     public class RefreshTokens
     {

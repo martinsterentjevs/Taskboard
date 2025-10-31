@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Taskboard.Api.Services;
+using Taskboard.API.Config;
 using Taskboard.API.Data;
 using Taskboard.API.Services;
 
@@ -46,6 +48,11 @@ builder.Services.AddScoped<DBStorageService>();
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.Configure<MongoSettings>(
+    builder.Configuration.GetSection("MongoSettings"));
+builder.Services.AddSingleton<TaskboardRepository>();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

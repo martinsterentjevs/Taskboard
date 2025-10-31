@@ -3,7 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Taskboard.API.DTOs;
-using Taskboard.API.Models;
+using Taskboard.API.Models.Auth;
 
 namespace Taskboard.API.Services
 {

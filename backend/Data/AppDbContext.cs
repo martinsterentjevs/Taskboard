@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Taskboard.API.Models;
+using Taskboard.API.Models.Auth;
 namespace Taskboard.API.Data
 {
     public class AppDbContext : DbContext

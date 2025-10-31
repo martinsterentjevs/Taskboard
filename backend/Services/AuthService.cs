@@ -1,8 +1,8 @@
 ﻿using System.Security.Cryptography;
 using Taskboard.API.Models.enums;
-using Taskboard.API.Models;
 using Taskboard.API.Helpers;
 using Taskboard.API.DTOs;
+using Taskboard.API.Models.Auth;
 
 namespace Taskboard.API.Services
 {
